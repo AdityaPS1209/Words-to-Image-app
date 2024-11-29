@@ -89,7 +89,6 @@ pyrr==0.10.3
 python-dateutil==2.8.2
 python-docx==1.1.2
 pytz==2024.1
-pywin32==306
 pyzmq==25.1.2
 raiutils==0.4.1
 referencing==0.33.0
