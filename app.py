@@ -40,6 +40,14 @@ def binary_to_image(binary_string, bit_size=2, color_1=(255, 165, 0), color_0=(0
 # Streamlit UI
 st.title("Word to Pixelated Image Converter")
 
+# Add some text
+st.write("Save words close to your heart as images. Just upload the doc file and generate an image representing whole doc as pixels.")
+
+# Load an image (ensure the image file is in the same directory or provide the correct path)
+image = Image.open("1 (2)565.png")
+
+# Display the image
+st.image(image, caption="This is an example image.", use_column_width=True)
 # Upload file
 uploaded_file = st.file_uploader("Choose a DOCX file", type="docx")
 
