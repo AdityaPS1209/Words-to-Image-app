@@ -38,7 +38,7 @@ def binary_to_image(binary_string, bit_size=2, color_1=(255, 165, 0), color_0=(0
     return img
 
 # Streamlit UI
-st.title("Word to Pixelated Image Converter")
+st.title("Word to Image Converter")
 
 # Add some text
 st.write("Save words close to your heart as images. Just upload the doc file and generate an image representing whole doc as pixels.")
@@ -52,8 +52,8 @@ st.image(image, caption="This is an example image.", use_column_width=True)
 uploaded_file = st.file_uploader("Choose a DOCX file", type="docx")
 
 # Color pickers for 1 and 0 bits
-color_1 = st.color_picker("Pick color for '1' bits", "#FFA500")  # Default Orange
-color_0 = st.color_picker("Pick color for '0' bits", "#00008B")  # Default Dark Blue
+color_1 = st.color_picker("Pick a color", "#FFA500")  # Default Orange
+color_0 = st.color_picker("Pick another one", "#00008B")  # Default Dark Blue
 
 if uploaded_file is not None:
     # Extract text from the uploaded DOCX file
