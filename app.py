@@ -77,3 +77,15 @@ if uploaded_file is not None:
     
     with open("binary_image.png", "rb") as file:
         st.download_button("Download Image", file, file_name="binary_image.png", mime="image/png")
+st.write("Created by- Aditya(a.k.a Data Dissection)")
+st.write("Check out my YouTube channel for more content!")
+youtube_logo = Image.open("3 (1) (3).png", width=50)
+st.markdown(
+    f"""
+    <a href="https://www.youtube.com/@DataDissection" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" 
+             alt="YouTube Logo" width="50">
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
